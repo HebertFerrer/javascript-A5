@@ -1,0 +1,41 @@
+﻿// Lineas de código donde se cumplen los requisitos de la tarea.
+
+/*-----------------PRIMERA ACTIVIDAD-----------------*/
+
+// dentro de ./assets/js/javascript.js
+if: 8, 54
+alert: 12
+while: 17
+prompt: 18
+for: 21
+confirm: 53
+switch: 70
+
+// en el index.html
+do while: 42
+prompt: 43
+document.write: 46
+
+/*-----------------SEGUNDA ACTIVIDAD-----------------*/
+
+//dentro de ./assets/js/formulario.js
+Función incorporada proporcionada por el lenguaje: 12
+Función definida por el usuario: 10, 3
+2 Objetos de navegador: 7, 22
+2 Objetos del documento: 2, 22
+4 Objetos form: 6, 17, 18, 19
+
+
+/*-----------------TERCERA ACTIVIDAD-----------------*/
+
+//dentro de ./assets/js/formulario.js
+3 Eventos: 168, 170, 172
+2 manejo de objetos o prototipos: 3, 20
+Formulario ya validado en todo el formulario.js
+
+/*-----------------CUARTA ACTIVIDAD-----------------*/
+
+//dentro de ./assets/js/index.js
+4 eventos jQuery: 3, 9, 15, 23
+4 metodos utilitarios jQuery: 4, 6, 10, 12
+

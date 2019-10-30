@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Registrar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/bootstrap/css/bootstrap.css" />
+</head>
+
+<body class="cuerpo">
+    <!-- ENCABEZADO -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: transparent">
+        <a class="navbar-brand" href="./index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- OPCIONES -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Registrate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./organiza.html">Organiza</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./formulariojQ.html">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FORMULARIO -->
+    <form id="formulario" name="form" class="needs-validation col-md-8 mx-auto my-5 p-3" novalidate>
+        <div class="form-row">
+            <!-- NOMBRE -->
+            <div class="col-sm-6 mb-3">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+            </div>
+            <!-- APELLIDO -->
+            <div class="col-sm-6 mb-3">
+                <input type="text" name="apellido" class="form-control" placeholder="Apellido">
+            </div>
+        </div>
+        <div class="form-row">
+            <!-- USUARIO -->
+            <div class="col-sm-6 mb-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    </div>
+                    <input type="text" name="usuario" class="form-control" id="validationTooltipUsername" placeholder="Usuario"
+                        aria-describedby="validationTooltipUsernamePrepend">
+                </div>
+            </div>
+            <!-- EMAIL -->
+            <div class="col-sm-6 mb-3">
+                <input type="text" name="email" class="form-control" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-row">
+            <!-- CONTRASEÑA -->
+            <div class="col-sm mb-3">
+                <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+            </div>
+            <!-- REPETIR CONTRASEÑA -->
+            <div class="col-sm mb-3">
+                <input type="password" name="passR" class="form-control" placeholder="Repetir contraseña">
+            </div>
+        </div>
+        <div class="form-row">
+            <!-- PAIS -->
+            <div class="col-sm mb-3">
+                <select name="pais" class="form-control">
+                    <option value="" disabled selected>Seleccione un país</option>
+                    <option>Argentina</option>
+                    <option>Brasil</option>
+                    <!-- <option>Chile</option>
+                    <option>Colombia</option>
+                    <option>Ecuador</option>
+                    <option>Perú</option> -->
+                    <option>Venezuela</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <!-- ESTADO -->
+            <div class="col-sm mb-3">
+                <select name="estado" class="form-control" disabled>
+                    <option disabled selected>Seleccione su estado</option>
+                </select>
+            </div>
+            <!-- CODIGO POSTAL -->
+            <div class="col-sm mb-3">
+                <input type="text" name="codigoP" class="form-control" placeholder="Código postal">
+            </div>
+            <!-- TELEFONO -->
+            <div class="col-sm mb-3">
+                <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Teléfono">
+            </div>
+        </div>
+        <!-- MEMBRESÍA -->
+        <div class="form-row">
+            <label id="membresia" class="ml-1 mr-3">Membresía:</label>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="membresia" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Gratuita</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="membresia" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Mensual - 18$</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline3" name="membresia" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline3">Anual - 70$</label>
+            </div>
+        </div>
+        <!-- TÉRMINOS Y CONDICIONES -->
+        <div class="custom-control custom-checkbox mb-2">
+            <input type="checkbox" name="terminos" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Acepto los terminos y condiciones del servicio</label>
+        </div>
+        <!-- ENVIAR -->
+        <button id="enviar" class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+
+
+</body>
+<script src="./assets/js/formulario.js"></script>
+<script src="./assets/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+<script src="./assets/bootstrap/js/popper.min.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+</html>

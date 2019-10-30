@@ -1,0 +1,70 @@
+/* MI HOJA DE ESTILOS PROPIA */
+.navBarPropio {
+    background-color: black !important;
+}
+
+body {
+    font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.margen {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+button > span {
+    background-color: white;
+}
+
+.servicios {
+    background-image: url(./../img/fondonegro.jpg)
+}
+
+.servicios-p {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.contactanos {
+    background-image: url("./../img/mapacontacto.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(11, 100, 106);
+}
+
+textarea {
+    box-sizing: border-box;
+    height: 147px !important;
+}
+
+button {
+    background-color: rgba(5, 46, 49, 0.6);
+    border: solid white 1px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 46, 49)
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}

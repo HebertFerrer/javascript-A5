@@ -1,2 +1,4 @@
 # javascript-A5
-Javascript and jQuery's module in webmaster
+
+Actividad final para el modulo de Javascript y jQuery en el diplomado
+webmaster.

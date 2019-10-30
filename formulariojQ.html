@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>¡Organizate!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/bootstrap/css/bootstrap.css" />
+</head>
+
+<body class="cuerpo">
+    <!-- ENCABEZADO -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: transparent">
+        <a class="navbar-brand" href="./index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- OPCIONES -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./formulario.html">Registrate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Organiza</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="display-4 my-5">
+        <p class="text-center">Contactanos</p>
+    </div>
+
+    <!-- FORMULARIO -->
+    <form action="" class="col-md-8 mx-auto my-5 p-3" id="formulario" name="form">
+        <!-- Nombre -->
+        <div class="form-group">
+            <label>Nombre *</label>
+            <div class="input-group">
+                <input type="text" name="name" class="form-control">
+            </div>
+            <!-- mensaje -->
+            <ul class="text-hide" id="nombreError">
+                <li class="text-warning">El nombre no es correcto. debe cumplir con lo siguiente:</li>
+                <li>No contener números</li>
+                <li>No contener carácteres especiales</li>
+                <li>Llenar el campo</li>
+            </ul>
+        </div>
+        <!-- Apellido -->
+        <div class="form-group">
+            <label>Apellido *</label>
+            <div class="input-group">
+                <input type="text" name="apellido" class="form-control">
+            </div>
+            <!-- mensaje -->
+            <ul class="text-hide" id="apellidoError">
+                <li class="text-warning">El nombre no es correcto. debe cumplir con lo siguiente:</li>
+                <li>No contener números</li>
+                <li>No contener carácteres especiales</li>
+                <li>Llenar el campo</li>
+            </ul>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label>Email *</label>
+            <div class="input-group">
+                <input type="text" name="email" class="form-control">
+            </div>
+            <!-- mensaje -->
+            <ul class="text-hide" id="emailError">
+                <li class="text-warning">El email no es correcto. debe cumplir con lo siguiente:</li>
+                <li>ejemplo@correo.com</li>
+                <li>Llenar el campo</li>
+            </ul>
+        </div>
+        <!-- Sitio web -->
+        <div class="form-group">
+            <label>Sitio web *</label>
+            <div class="input-group">
+                <input type="text" name="web" class="form-control">
+            </div>
+            <!-- mensaje -->
+            <ul class="text-hide" id="webError">
+                <li class="text-warning">La dirección url no es correcta. debe cumplir con lo siguiente:</li>
+                <li>Llenar el campo</li>
+                <li>http://sitioweb.com</li>
+            </ul>
+        </div>
+        <!-- Mensaje -->
+        <div class="form-group">
+            <label>Mensaje *</label>
+            <div class="input-group">
+                <textarea class="form-control" name="mensaje"></textarea>
+            </div>
+            <!-- mensaje -->
+            <ul class="text-hide" id="mensajeError">
+                <li class="text-warning">El mensaje no es correcto. debe cumplir con lo siguiente:</li>
+                <li>al menos 10 carácteres</li>
+                <li>máximo 1000 carácteres</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
+        </div>
+    </form>
+
+
+</body>
+<script src="./assets/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+<script src="./assets/bootstrap/js/popper.min.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/js/formulariojQ.js"></script>
+
+</html>
